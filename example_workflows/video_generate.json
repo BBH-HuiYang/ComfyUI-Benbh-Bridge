@@ -1,0 +1,22 @@
+{
+  "id": "00000000-0000-0000-0000-000000000002",
+  "revision": 0,
+  "last_node_id": 2,
+  "last_link_id": 1,
+  "nodes": [
+    {
+      "id": 1, "type": "BenbhVideoGenerate", "pos": [120, 160], "size": [420, 540], "flags": {}, "order": 0, "mode": 0,
+      "inputs": [{"name": "reference_images", "type": "IMAGE", "link": null, "label": "参考图片（可选）"}],
+      "outputs": [{"name": "视频", "type": "VIDEO", "shape": 6, "links": [1]}],
+      "properties": {"Node name for S&R": "BenbhVideoGenerate"},
+      "widgets_values": ["", "镜头缓缓推进，微风吹过树梢，柔和的自然光，流畅的电影画面", "{}"]
+    },
+    {
+      "id": 2, "type": "SaveVideo", "pos": [660, 160], "size": [340, 300], "flags": {}, "order": 1, "mode": 0,
+      "inputs": [{"name": "video", "type": "VIDEO", "link": 1}], "outputs": [],
+      "properties": {"Node name for S&R": "SaveVideo"}, "widgets_values": ["video/BBH", "auto", "auto"]
+    }
+  ],
+  "links": [[1, 1, 0, 2, 0, "VIDEO"]], "groups": [], "config": {},
+  "extra": {"ds": {"scale": 1, "offset": [0,0]}, "workflowRendererVersion": "LG", "frontendVersion": "1.35.9"}, "version": 0.4
+}

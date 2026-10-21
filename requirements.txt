@@ -1,0 +1,5 @@
+# Dependencies are already provided by a standard ComfyUI installation.
+aiohttp>=3.9
+numpy
+Pillow
+torch
